@@ -1,0 +1,134 @@
+/*
+COLOR PRINCIPAL #2b2a34
+COLOR CLARO #4e4c5e
+COLOR INTERMEDIO #1f1f26
+COLOR MÁS OSCURO #141318
+*/
+*{
+    margin: 0;
+    color: beige;
+    text-align: center;
+}
+body{
+    background-color: #2b2a34;
+}
+.bg_addon img95{
+    z-index: -1;
+}
+table{
+    margin-top: 2.5%;
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    border:1vw solid #2b2a34;
+    border-collapse: separate;
+    border-radius: 1.5rem;
+    
+}
+td{
+    background-color: #4e4c5e;
+    border:1vw solid #2b2a34;
+    border-collapse: collapse;
+    border-radius: 3vw;
+    
+}
+.dumb{
+    font-size: 3.5vw;
+    
+}
+.dumb a{
+    margin-bottom: 7.5%;
+    padding: 2.5% 5% 2.5% 5%;
+}
+.dumb a:hover{
+    padding: 5%;
+    color: #2b2a34;
+    padding: 2.5% 5% 2.5% 5%;
+}
+.logo{
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.logo img{
+    margin-top: 3%;
+    margin-left: 15%;
+    float: left;
+    width: 20%; 
+}
+.logo h1{
+    float: left;
+    margin-left: 5%;
+    font-size: 8vw;
+}
+.signup{
+    margin-left: 2%;
+    margin-right: 2%;
+   
+}
+.signup h2{
+    font-size: 7vw;
+    margin-top: 3%;
+}
+.signup label{
+    font-size: 3vw;
+    margin-top: 5%;
+    
+}
+.signup button{
+    color: #2b2a34;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 65%;
+}
+.signup a{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.signup a:hover{
+    color: #141318;
+}
+.login{
+    color: beige;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #2a2e34;
+    padding: 5% 8%;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 2vw;
+    box-shadow: #1f1f26 0.5vw 1vw;
+}
+.signup button:hover{
+    background-color: #141318;
+
+}
+@media only screen and (max-width: 600px ) {
+
+    .logo img{
+        display: none;
+    }
+    .logo h1{
+    
+        font-size: 6vw;
+        margin-left: 27.5%;
+    }
+    .dumb{
+        margin: 5%;
+    }
+    
+}
+@media only screen and (min-width: 1024px ) {
+    .signup label{
+        font-size: 2vw;
+    }
+    .signup input{
+        font-size: 1.5vw; 
+    }
+    .dumb a{
+        padding-bottom: 8%;
+    }
+
+    
+}

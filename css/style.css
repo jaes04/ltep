@@ -1,0 +1,113 @@
+/*
+COLOR PRINCIPAL #2b2a34
+COLOR CLARO #4e4c5e
+COLOR INTERMEDIO #1f1f26
+COLOR MÁS OSCURO #141318
+*/
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: #2b2a34;
+}
+.logo{
+    display: block;
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 10%;
+ 
+    width: 35%;
+    height: 80%;
+    background-color: #4e4c5e;
+    border-radius: 15px;
+}
+.logo img{
+    margin-top: 9%;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 5%;
+}
+.logo h1{
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 5vw;
+    color:beige;
+}
+.chose{
+    display: block;
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 5%;
+    width: 35%;
+    height: 80%;
+    background-color: #4e4c5e;
+    border-radius: 15px;
+}
+.chose h2{
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 5vw;
+    color:beige;
+}
+.chose button{
+    border-radius: 80px;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    width: 60%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    font-size: 2vw;
+    background-color:#141318;
+    color: beige;
+}
+.chose button:hover{
+    background-color: #1f1f26;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 786px) {
+    .logo{
+        margin-top: 20%;
+    }
+    .chose{
+        margin-top: 20%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin-top: 10%;
+        width: 80%;
+    }
+    .logo h1{
+        display: block;
+        float: left;
+        font-size: 10vw;
+        margin-top: 12%;
+        margin-left: 20%;
+    }
+    .logo img{
+        display: block;
+        float: left;
+        width: 30%;
+    } 
+    .chose{
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }   
+    .chose h2{
+        display: none;
+    }
+    .chose button{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 20%;
+        font-size: 4vw;
+    }
+}
+
