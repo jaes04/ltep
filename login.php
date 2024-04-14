@@ -22,15 +22,16 @@
                     <input type="text" name = "username">
                     <br>
                     <?php
-                    $_userControl = $_GET['control'];
-                    if($_userControl == 2){
-                        echo"<h4>Hay algun problema con el usuario </h4>";
-                    }elseif($_userControl == 3){
-                        echo"<h4>Hay algun problema con la contraseña</h4>";
-                    }else{
-                        echo"<h4></h4>";
-
-                    }
+                        if(isset($_GET["control"])) { 
+                            $userControl = $_GET['control'];
+                            if($userControl != null){
+                                if($userControl == 2){
+                                    echo"<h4>Hay algun problema con el usuario </h4>";
+                                }elseif($userControl == 3){
+                                    echo"<h4>Hay algun problema con la contraseña</h4>";
+                                }
+                            }  
+                        }    
                     ?>
                     <label for="password">Password</label>
                     <br>
