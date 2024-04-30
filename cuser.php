@@ -23,7 +23,7 @@
       $password = $_POST["password"];
       $password2 = $_POST["password2"];
 
-      $sql="SELECT ID FROM user WHERE username = '".$username."'";
+      $sql="SELECT user_id FROM user WHERE username = '".$username."'";
       $result= $conn->query($sql);
       if ($result -> num_rows >= 1) {
         header("Location: signin.php?usr=1");
@@ -32,15 +32,16 @@
         if($password==$password2){
 
             //Insertamos el usuario en la BBDD
-            $sql = "INSERT INTO user (username, pass,email)
+            $sql = "INSERT INTO user (username, pass,mail)
                     VALUES ('$username', '$password', '$mail')";
-            $result -> query($sql);
+            $result=$conn -> query($sql);
 
             //Recogemos el id del usuario creado para mandarlo a la main page
-            $sql="SELECT ID FROM user WHERE username = '".$username."'";
-            $result->query($sql);
-            $_SESSION['id'] =$result->fetch_assoc(id);
-            header("Location: mainpage\index.html");
+            $sql="SELECT user_id FROM user WHERE username = '".$username."'";
+            $result=$conn->query($sql);
+            $row=$result->fetch_assoc();
+            $_SESSION['id'] =$row["id"];
+            header("Location: main_page\index.html");
         }else{
             header("Location: signin.php?pwd=1");
     

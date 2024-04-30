@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\css\style.css">
+    <link rel="stylesheet" href="css\signinstyle.css">
     <title>Document</title>
 </head>
 <body>
     
-    <a class="logo"><img src="..\img\kisspng-ibm-personal-computer-xt--5b7d29c8701976.1479871415349293524592.png"></a>
+    <a class="logo"><img src="img\ibm_icon_ltep.png"></a>
 
     
 
