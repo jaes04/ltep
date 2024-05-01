@@ -1,2 +1,4 @@
 #Ignorar .vscode
 .vscode
+#Ignorar configuracion de bases de datos
+bdconfig.php
