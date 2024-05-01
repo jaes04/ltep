@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2b2a34;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+#inicio{
+    background-color: #4e4c5e;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.encabezado{
+    background-color: #4e4c5e;
+}
+.post{
+    border: #4e4c5e;
+    margin: 5% 20% 2% 2%;
+    float: left;
+    background-color: #4e4c5e;
+    color: beige;
+}
+.user{
+    margin-bottom: 1%;
+}
+.img{
+    height: 20%;
+    width: 20%;
+}
+.titulo{
+    margin-bottom: 1%;
+}
+.asignaturas{
+    margin-bottom: 1%;
+}
+.foto{
+    width: 2%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+.menu {
+	background: #1d1d1d;
+	height: 8.5%;
+    width: 100%;
+	display: flex;
+    position: fixed;
+}
+.logo {
+	width: 100%;
+	height: 100%;
+	margin-right: 30%;
+	border-radius: 10%;
+    padding-right: 15%;
+}
+.buscador {
+	background: #2b2b2b;
+	border: solid 1px #525252;
+	border-radius: 10px;
+	width: 40vw;
+    padding-top: -30%;
+    padding-bottom: -5%;
+    margin-left: 1%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5;
+}
+
+.buscador:hover {
+	background: #111;
+	border: solid 2px #eee;
+}
+
+#busqueda {
+	padding: 10px 25px;
+	margin: 10px;
+	width: 60vw;
+	padding-left: 35px;
+	border-radius: 150px;
+	background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+	background-size: 30px;
+	color: #eee;
+	font-size: 15px;
+	border: none;
+}
+
+#busqueda:focus {
+	outline: none;
+}
+.buttons {
+	width: 100%;
+	background-color: #069;
+}
+.espacio{
+    padding-left: 5%;
+    padding-right: 1%;
+    width: 20%;
+    height: 100%;
+}
+.logousu{
+    margin-left: 110%;
+    border-radius: 30%;
+    width: 70%;
+    height: 100%;
+}
+.nombre{
+    color: beige;
+    list-style: none;
+    text-decoration: none;
+    padding-top: 50%;
+    margin-left: 120%;
+
+}
+
+.foro a{ 
+    text-decoration: none;
+    list-style: none;
+}
+.foro{
+    background-color: #333;
+    width: 15%;
+    height: 3%;
+    color: beige;
+}
+.Anatomia{
+    background-color: #333;
+}
+.DAM{
+    background-color: #333;
+}
+.space{
+    margin-left: 2%;
+}
+.topnav{
+    overflow: visible;
+    background-color: #333;
+}
+.topnav a{
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    padding-top: 20%;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+.eventos{
+    margin-top: 5%;
+    position: fixed;
+    border: solid;
+    background-color: #525252;
+    font-size: 30px;
+    width: 17.5%;
+    border-radius: 40px;
+    right: 20px;
+    text-align: center;
+}
+.eventos a{
+    text-decoration: none;
+    list-style: none;
+}
+.n_evento{
+    color: #3B83BD;
+}
+.comentarios{
+    float: right;
+    margin-right: 15%;
+    margin-top: -7%;
+    background-color: #141318;
+    color: beige;
+}
+.arriba{
+    position: fixed;
+    color: white;
+    border: solid;
+    background-color: rgb(82, 4, 155);
+    font-size: 30px;
+    border-radius: 40px;
+    width: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+.centrar{
+    padding: 0.5em;
+}
+.campanita{
+    width: 25%;  
+    height: 100%;
+}
+@media only screen and (max-width: 600px){
+    .logousu{
+        margin-left: -15%;
+    }
+    .buscador{
+        width: 20vw;
+        margin-right: 5%;
+    }
+    #busqueda{
+        font-size: xx-small;
+    }
+    .nombre{
+        margin-left: -19.5%;
+    }
+    .eventos{
+        margin-left: -40%;
+        margin-top: 10%;
+        font-size: small;
+    }
+    .espacio{
+        margin-right: -10%;
+    }
+    .campanita{
+        width: 40%;
+    }
+    .post{
+        margin-top: 10%;
+        margin-right: 20%;
+    }
+}
+@media only screen and (max-width:20000000px) {
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        display: block;
+
+    }
+}
+/*MEDIA QUERIE PARA TRABAJAR*/
+@media only screen and (max-width:20000000px){
+    .topnav.responsive{
+        position: relative;
+    }
+    .topnav.responsive .icon{
+        position: absolute;
+    }
+    .topnav.responsive a{
+        display: block;
+    }
+    
+}
