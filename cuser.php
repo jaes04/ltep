@@ -1,11 +1,8 @@
 <?php
     // Datos de conexión a la base de datos
-    SESSION_START();
-    $servername = "localhost";
-    $username = "darek";
-    $password = "Australia";
-    $database = "proyecto_intermod";
+    include("config/bdconfig.php");
 
+    SESSION_START();
 
   // Crear conexión
   $conn = new mysqli($servername, $username, $password, $database);

@@ -1,9 +1,7 @@
 <?php
+    include("config/bdconfig.php");
+   
     session_start();
-    $servername = "localhost";
-    $username = "ltep";
-    $password = "tHYe8L6wPcL[8)E";
-    $database = "ltep";
 
     $user = $_POST['username'];
     $uPassword = $_POST['password'];
@@ -19,17 +17,17 @@
     // Comprobar si se ha enviado el formulario
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
-        $sql = "SELECT id FROM user WHERE username = '".$user."'";
+        $sql = "SELECT user_id FROM user WHERE username = '".$user."'";
         
         $result = $conn->query($sql);
         $row = $result->fetch_assoc();
-        $_SESSION['id'] = $row['id'];
+        $_SESSION['id'] = $row['user_id'];
 
         
        
         if($result->num_rows == 1){
 
-            $sql = "SELECT id from user where pass = '".$uPassword."' AND id = ". $_SESSION['id'];
+            $sql = "SELECT user_id from user where pass = '".$uPassword."' AND user_id = ". $_SESSION['id'];
             $result = $conn->query($sql);
 
             if($result->num_rows == 1){
