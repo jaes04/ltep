@@ -1,5 +1,5 @@
 <?php
-    include("config/bdconfig.php");
+    include("../config/bdconfig.php");
    
     session_start();
 
@@ -32,7 +32,7 @@
 
             if($result->num_rows == 1){
 
-                header("location: /Page/main_page/index.html");
+                header("location: ../page/main.php");
                 
             }else{
             

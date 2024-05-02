@@ -1,6 +1,6 @@
 <?php
     // Datos de conexión a la base de datos
-    include("config/bdconfig.php");
+    include("../config/bdconfig.php");
 
     SESSION_START();
 

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/loginStyle.css">
+    <link rel="stylesheet" href="../css/loginStyle.css">
     <title>LTEP</title>
 </head>
 <body>
     <table border="1" >
         <tr>
             <td class="logo">
-                <img src="img\ibm_icon_ltep.png">
+                <img src="..\img\ibm_icon_ltep.png">
                 <h1>LTEP</h1>
             </td>
             <td class="signup" rowspan="2">
-                <form action="checker.php" method="post">
+                <form action="../controllers/checker.php" method="post">
                     <h2>Iniciar Sesión</h2>
                     <br>
                     <label for="username">Username</label>
