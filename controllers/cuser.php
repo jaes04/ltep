@@ -38,7 +38,7 @@
             $result=$conn->query($sql);
             $row=$result->fetch_assoc();
             $_SESSION['id'] =$row["id"];
-            header("Location: main_page\index.html");
+            header("Location: ../page\main.php");
         }else{
             header("Location: signin.php?pwd=1");
     
