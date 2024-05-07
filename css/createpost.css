@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #2b2a34;
+}
+.encabezado{
+    background-color: #1f1f26;
+    margin-left: 35%;
+    margin-right: 25%;
+    margin-top: 5%;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+.menu{
+    margin-top: 2%;
+    margin-left: 35%;
+    margin-right: 25%;
+    background-color: #333;
+}
+.despegable a{ 
+    text-decoration: none;
+    list-style: none;
+}
+.despegable{
+    background-color: #333;
+    color: beige;
+    border: none;
+}
+.despegable :hover{
+    background-color: #ddd;
+}
+.title{
+    margin-top: 2%;
+    color: #333;
+    margin-bottom: 5%;
+    margin-left: 2%;
+}
+.despegable{
+    margin-top: 2%;
+    border-radius: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    background-color: #1f1f26;
+}
+
+.text{
+    margin-left: 2%;
+    resize: vertical;
+}
+input[type="file"] {
+    display: none;
+}
+.imagen{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+/* Invisible texto */
+figcaption {
+    display:none; 
+    transition: all .5s;
+    color: rgb(233, 233, 233);
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  /* Visible texto */
+  figure:hover > figcaption {
+    display:block;
+    transition: all .5s;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.boton{
+    border: none;
+    border-radius: 15%;
+    background-color: rgb(233, 233, 233);
+    padding: 3%;
+    text-align: center;
+    margin-left: 87%;
+}
