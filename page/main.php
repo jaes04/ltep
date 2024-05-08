@@ -19,21 +19,16 @@
             <br>
             <br>
             <div class="foros">
-                <a href="Anatomia" class="Anatomia">Anatomia</a>
-                <a href="DAM" class="DAM">DAM</a>
-                <a href="DAM" class="DAM">Medicina</a>
+                <a href="Anatomia" class="asignature">Anatomia</a>
+                <a href="DAM" class="asignature">DAM</a>
+                <a href="DAM" class="asignature">Medicina</a>
             </div>
         </div>
         <div class="espacio">
             <img class="campanita" src="../img/Notificaciones.png">
         </div>
         <div class="buscador">
-			<input
-			type="text"
-			id="busqueda"
-			name="busqueda"
-			placeholder="Busca algo friki"
-			/>
+			<input type="text" id="busqueda" name="busqueda" placeholder="Busca algo friki"/>
 		</div>
         <div class="usuario">
             <a href=""><img class="logousu" src="../img/naruto.PNG">
