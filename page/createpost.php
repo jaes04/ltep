@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/createpost.css">
+    <link rel="stylesheet" href="../css/createpost.css?v=<?php echo (rand())?>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Create post</title>
 </head>
@@ -11,7 +11,7 @@
     <div class="encabezado">
         <h1>New Post</h1>
     </div>
-    <form method="post" action="create.php">
+    <form method="post" action="../controllers/create.php">
         <div class="menu">
             <select class="despegable" id="subject" name="subject">
                 <?php include '../controllers/gettersubject.php'?>
