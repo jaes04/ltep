@@ -6,7 +6,7 @@ COLOR MÁS OSCURO #141318
 */
 *{
     margin: 0;
-    color: beige;
+    color: rgb(220, 245, 245);
     text-align: center;
 }
 body{
@@ -103,6 +103,12 @@ td{
 .signup button:hover{
     background-color: #141318;
 
+}
+.username{
+    color: #4e4c5e;
+}
+.password{
+    color: #4e4c5e;
 }
 @media only screen and (max-width: 600px ) {
 

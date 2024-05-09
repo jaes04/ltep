@@ -19,7 +19,7 @@
                     <br>
                     <label for="username">Username</label>
                     <br>
-                    <input type="text" name = "username">
+                    <input type="text" class="username" name = "username">
                     <br>
                     <?php
                         if(isset($_GET["control"])) { 
@@ -35,7 +35,7 @@
                     ?>
                     <label for="password">Password</label>
                     <br>
-                    <input type="password" name="password">
+                    <input type="password" class="password" name="password">
                     <br>
                     <a src = "#" >¿Has olvido la contraseña?</a>
                     <br>
