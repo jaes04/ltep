@@ -7,35 +7,49 @@ body{
 }
 .encabezado{
     background-color: #1f1f26;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
     text-align: center;
     color: rgb(233, 233, 233);
+    border: none;
+    border-radius: 50px;
+    padding: 20px;
+
 }
 .menu{
     margin-top: 2%;
-    margin-left: 35%;
+    margin-left: 25%;
     margin-right: 25%;
     background-color: #333;
+    border: none;
+    border-radius: 7%;
 }
 .despegable a{ 
     text-decoration: none;
     list-style: none;
+    border: none;
+    border-radius: 10px;
 }
 .despegable{
     background-color: #333;
     color: beige;
     border: none;
+    border-radius: 10px;
 }
 .despegable :hover{
     background-color: #ddd;
+    border: none;
+    border-radius: 10px;
 }
 .title{
     margin-top: 2%;
     color: #333;
     margin-bottom: 5%;
-    margin-left: 2%;
+    margin-left: 1%;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
 }
 .despegable{
     margin-top: 2%;
@@ -46,8 +60,11 @@ body{
 }
 
 .text{
-    margin-left: 2%;
+    margin-left: 1%;
     resize: vertical;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
 }
 input[type="file"] {
     display: none;
@@ -55,6 +72,10 @@ input[type="file"] {
 .imagen{
     margin-top: 2%;
     margin-left: 2%;
+}
+.imagen :hover{
+    color: aqua;
+    cursor: pointer;
 }
 /* Invisible texto */
 figcaption {
@@ -77,11 +98,13 @@ figcaption {
     background-color: rgb(233, 233, 233);
     padding: 3%;
     text-align: center;
-    margin-left: 87%;
+    margin-left: 84%;
+    cursor: pointer;
+    margin-bottom: 2%;
 }
 @media only screen and (max-width: 1458px) {
     .title{
-        width: 20%;
+        width: 90%;
     }
     .text{
         width: 100%;
@@ -91,5 +114,18 @@ figcaption {
         border: 1px solid #ccc;
         border-radius: 3px;
         box-sizing: border-box;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .boton{
+        margin-left: 80%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .boton{
+        margin-left: 60%;
+    }
+    .encabezado{
+        font-size: x-small;
     }
 }
