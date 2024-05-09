@@ -35,6 +35,7 @@
         // Ejecutar la consulta
         if ($conn->query($sql) === TRUE) {
             echo "Datos insertados correctamente.<br>";
+            header("Location: ../page/main.php");
         } else {
             echo "Error al insertar datos: " . $conn->error . "<br>";
         }
