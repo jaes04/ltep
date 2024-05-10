@@ -11,5 +11,11 @@
         die("Conexión fallida: " . $conn->connect_error);
     }
 
-    $sql = "Select username, profile_pic from user where user_id = ". $_SESSION['id'];
-    $result = $conn->query($sql);
+    $result = $conn->query("Select username, profile_pic from user where user_id = ". $_SESSION['id']);
+    while($row = $result->fetch_assoc() ){
+        $username = $row['username'];
+        $profile_pic = $row['profile_pic'];
+
+        echo '<img class = profile_pic src = "' . $profile_pic . '" alt = "user_pic">';
+        echo '<p class = "bar_username">'.$username.'</p>';
+    }

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #2b2a34;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: #221f2c;
+}
+
+.topnav img{
+    width: 8%;
+    float: left;
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+.topnav a{
+    width: 8%;
+}
+
+.buscador{
+    float: right;
+    margin: 3vw;
+    width: 35%;
+    border-radius: 60px;
+    padding: 13px;
+}
+
+/*EL DIV CON EL NOMBRE Y EL TAG, FOTO USUARIO*/
+.nombre{
+    background-color: #4e4c5e;
+    margin-left: 12%;
+    display: inline-block;
+    width: 75%;
+    border-radius: 0 0 80px 80px;
+}
+
+.nombre h1{
+    display: inline-block;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+.nombre p{
+    font-size: 25px;
+}
+
+.nombre img{
+    border-radius: 500px;
+    width: 150px;
+    padding: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+}
+
+/*HE AQUI LA MAGIA, LOS POSTS Y ESO*/
+.post{
+    background-color: #4e4c5e;
+    width: 40%;
+    float: left;
+    margin-left: 12%;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.post h1{
+    font-size: 25px;
+    color: rgb(190, 199, 226);
+    margin-bottom: 5px;
+}
+
+.post p{
+    font-size: 15px;
+    color: rgb(194, 220, 223);
+    display: block;
+}
+
+.post img{
+    width: 45%;
+    margin-right: 70px;
+    margin-top: 10px;
+    padding: 15px;
+    display: block;
+}
+
+.comentarios{
+    background-color:#4e4c5e;
+    float: left;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 1vw;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.comentarios img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 5px;
+    margin-right: 3px;
+    border-radius: 200px;
+}
+
+.comentarios h1{
+    font-size: 15px;
+    color: rgb(190, 199, 226);
+    padding-top: 8px;
+}
+
+.comentarios a{
+    text-decoration: none;
+}
+
+.comentarios p{
+    font-size: 15px;
+    color: rgb(194, 220, 223);
+}
+
+@media only screen and (max-width: 850px){
+    .comentarios {
+        display: none;
+    }
+
+    .post{
+        width: 71%;
+    }
+
+    .nombre{
+        height: 170px
+    }
+    
+    .nombre h1{
+        margin-top: 55px;
+        font-size: 30px;
+    }
+    
+    .nombre p{
+        font-size: 20px;
+    }
+    
+    .nombre img{
+        width: 100px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    .nombre h1{
+        margin-top: 55px;
+        font-size: 30px;
+    }
+    
+    .nombre p{
+        font-size: 18px;
+    }
+    
+    .nombre img{
+        width: 80px;
+        padding: 8px;
+        margin-left: 5%;
+    }
+
+    .post{
+        width: 70%;
+    }
+}

@@ -58,15 +58,15 @@
          $sectors_id = substr( $sectors_id, 0, -1);
 
         
-        $sql = 'SELECT id_post, title, body, post_file, user_id, subject_id FROM post where id_post in ( ' .  $sectors_id. ')' ;
+        $sql = 'SELECT post_id, title, body, file, user_id, subject_id FROM post where post_id in ( ' .  $sectors_id. ')' ;
         $qpost = $conn->query($sql);
     
         while($row = $qpost->fetch_assoc()) {
             
-            $post_id = $row['id_post'];
+            $post_id = $row['post_id'];
             $post_title = $row['title'];
             $post_body = $row['body'];
-            $post_file = $row['post_file'];
+            $post_file = $row['file'];
             $post_user_id = $row['user_id'];
             $post_subject_id = $row['subject_id'];
 
@@ -80,15 +80,14 @@
             $qsub = $conn->query($sql);
             $row = $qsub->fetch_assoc();
             $subject = $row['name'];
-            echo $post_profile_pic;
-            echo $username;
+            echo' <p>'.$post_id.'</p>';
 
             echo '<article>';
             echo '  <table class = "upost">';
             echo '      <tr>';
             echo '          <td>';
-            echo '              <img src = "'.$post_profile_pic.'" alt = "' . $username . '"  class = "pp">';
-            echo '              <p class = "p_username">'. $username . '</h2>';
+            echo '              <img src = '. $post_profile_pic .' alt = "' . $username . '"  class = "pp"/>';
+            echo '              <p class = "p_username">'. $username . '</p>';
             echo '          </td>';
             echo '          <td rowspan = 3>';
             
@@ -102,9 +101,9 @@
                 $username = $row['username'];
                 $profile_pic = $row['profile_pic'];
                 echo'       <article>';
-                echo'           <img src = '. $profile_pic. 'alt = "comment_pp" class =>';
+                echo'           <img src = '. $profile_pic . 'class = "comment_pp"/>';
                 echo'           <p class = "username">'.$username.'</p>';
-                echo'           <p>'.$body.'</p';
+                echo'           <p class = "c_body">'.$body.'</p>';
                 echo'       </article>';
             }
     
@@ -112,27 +111,27 @@
             echo '      </tr>';
             echo '      <tr>';
             echo '          <td>';    
-            echo '              <p class = "p_title"> '. $post_title. '</p>';
-            echo '              <p>'. $subject . '</p><br>';
+            echo '              <p class = "post_title"> '. $post_title. '</p>';
+            echo '              <p class = "post_subject">'. $subject . '</p><br>';
             echo '          </td>';
             echo '      </tr>';
             echo '      <tr>';
             echo '          <td>';   
-            echo '              <p>'. $post_body. '</p><br>';
+            echo '              <p class = "post_body">'. $post_body. '</p><br>';
             echo '          </td>';
             echo '      </tr>';
              if($post_file != null) {
                 if(str_contains($post_file,".png")){
                     echo '      <tr>';
                     echo '          <td>';
-                    echo '              <img src = '.$post_file.' alt = "' . $post_file . '"  class = "p_img"">';
+                    echo '              <img src = '. $post_file.' alt = "' . $post_file . '"  class = "p_img">';
                     echo '          </td>';
                     echo '      </tr>';
                 }else{
                     echo '      <tr>';
                     echo '          <td>';
-                    echo '              <a href = '.$post_file.'>';
-                    echo '                  <img src = "../img/post/p_folder.png" alt = "pdf"  class = "p_pdf"">';
+                    echo '              <a href = '. $post_file.'>';
+                    echo '                  <img src = "../img/post/p_folder.png" alt = "pdf"  class = "p_pdf">';
                     echo '              </a>';
                     echo '          </td>';
                     echo '      </tr>';
