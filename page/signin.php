@@ -14,7 +14,7 @@
 
     <div class="innerbox">
         
-        <form action="controllers\cuser.php" method="post">
+        <form action="../controllers/cuser.php" method="post">
             <H2 class="titleSignUp" >Sign in</H2>
 
             <Label for="username">Username</Label>

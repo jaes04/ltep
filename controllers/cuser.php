@@ -4,16 +4,16 @@
 
     SESSION_START();
 
-  // Crear conexión
-  $conn = new mysqli($servername, $username, $password, $database);
+    // Crear conexión
+    $conn = new mysqli($servername, $username, $password, $database);
 
-  // Verificar la conexión
-  if ($conn->connect_error) {
-      die("Conexión fallida: " . $conn->connect_error);
-  }
+    // Verificar la conexión
+    if ($conn->connect_error) {
+        die("Conexión fallida: " . $conn->connect_error);
+    }
 
-  // Comprobar si se ha enviado el formulario
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Comprobar si se ha enviado el formulario
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // Recibir datos del formulario
       $username = $_POST["username"];
       $mail = $_POST["mail"];
@@ -38,9 +38,9 @@
             $result=$conn->query($sql);
             $row=$result->fetch_assoc();
             $_SESSION['id'] =$row["id"];
-            header("Location: ../page\main.php");
+            header("Location: ../page/main.php");
         }else{
-            header("Location: signin.php?pwd=1");
+            header("Location: ../page/signin.php?pwd=1");
     
         }
      }
