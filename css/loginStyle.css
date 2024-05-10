@@ -52,9 +52,8 @@ td{
 }
 .logo img{
     margin-top: 3%;
-    margin-left: 15%;
+    margin-left: 2%;
     float: left;
-    width: 20%; 
 }
 .logo h1{
     float: left;
@@ -102,7 +101,12 @@ td{
 }
 .signup button:hover{
     background-color: #141318;
-
+}
+.title{
+    display: none;
+}
+.maybe{
+    display: none;
 }
 .username{
     color: #4e4c5e;
@@ -121,7 +125,18 @@ td{
         margin-left: 27.5%;
     }
     .dumb{
-        margin: 5%;
+        display: none;
+    }
+    .title{
+        display: block;
+        font-size: 3vw;
+    }
+    .logo{
+        display: none;
+    }
+    .maybe{
+        display: block;
+
     }
     
 }

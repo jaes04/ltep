@@ -10,11 +10,13 @@
     <table border="1" >
         <tr>
             <td class="logo">
-                <img src="..\img\ibm_icon_ltep.png">
-                <h1>LTEP</h1>
+                <img src="..\img\logo.png">
+            
             </td>
             <td class="signup" rowspan="2">
                 <form action="../controllers/checker.php" method="post">
+                    <h2 class = 'title'>Unote</h2>
+                    <br>
                     <h2>Iniciar Sesión</h2>
                     <br>
                     <label for="username">Username</label>
@@ -41,13 +43,17 @@
                     <br>
                     <button type="submit">Iniciar Seseion</button>
                     <br>
+                    <div class="maybe">
+                        <p>¿No tienes cuenta?</p> <br>
+                        <a href="signin.php">Si es asi pinche aqui</a>
+                    </div>
                 </form>
             </td>
         </tr>
         <tr>
-            <td class=    >
+            <td class='dumb'>
                 <p>¿No tienes cuenta?</p> <br>
-                <a href="../Sign in/index.html">Si es asi pinche aqui</a>
+                <a href="signin.php">Si es asi pinche aqui</a>
             </td>
         </tr>
     </table>   
