@@ -77,21 +77,7 @@ input[type="file"] {
     color: aqua;
     cursor: pointer;
 }
-/* Invisible texto */
-figcaption {
-    display:none; 
-    transition: all .5s;
-    color: rgb(233, 233, 233);
-    margin-top: 2%;
-    margin-left: 2%;
-  }
-  /* Visible texto */
-  figure:hover > figcaption {
-    display:block;
-    transition: all .5s;
-    margin-top: 2%;
-    margin-left: 2%;
-}
+
 .boton{
     border: none;
     border-radius: 15%;
