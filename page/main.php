@@ -12,7 +12,7 @@
         <a href="#" class="notification">Notificaciones</a>
         <input class = "buscador" type="text" placeholder="Buscate algo pues...">
     </div>
-    <div class="feed">
+        <button class="boton" type="submit"><a href="../page/createpost.php">New Post</a></button>
         <?php include '../controllers/genPost.php';?>
     </div>
 </body>
