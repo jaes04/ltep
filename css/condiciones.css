@@ -1,0 +1,41 @@
+/*
+COLOR PRINCIPAL #2b2a34
+COLOR CLARO #4e4c5e
+COLOR INTERMEDIO #1f1f26
+COLOR MÁS OSCURO #141318
+*/
+*{
+    padding: 0%;
+    margin: 0%9;
+}
+body{
+    background-color: #2b2a34;
+    color: rgb(190, 199, 226);
+}
+header{
+    width: 100%;
+    padding-bottom: 1%;
+}
+header h3{
+    font-size: 13vw;
+    margin: 0;
+}
+header h1{
+    margin-left: 7%;
+}
+img{
+    width: 15%;
+    margin-top: 2%;
+    margin-left: 2%;
+    float: left;
+}
+p,ol{
+    margin-left: 7%;
+    font-size: 1.5vw;
+}
+ol{
+    margin-left: 8.5%;
+}
+.contacto{
+    text-align: center;
+}
