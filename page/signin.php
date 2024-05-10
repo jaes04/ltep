@@ -56,9 +56,11 @@
             <input type="password" id="password2" name="password2">
 
             <br>
-        
+            <p>Al registrarte, aceptas nuestras Condiciones. Obtén información sobre cómo recopilamos, usamos y compartimos tus datos en la Política de privacidad, así como el uso que hacemos de las cookies y tecnologías similares en la Política de cookies.</p>
             <button type="submit">Sign in</button>
         </form>
+
+       
         
 
     </div>
