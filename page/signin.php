@@ -8,8 +8,10 @@
 </head>
 <body>
     
-    <a class="logo"><img src="img\ibm_icon_ltep.png"></a>
-
+    
+    <a class="logo"><img src="..\img\logo.png"></a>
+            
+    
     
 
     <div class="innerbox">
@@ -55,7 +57,7 @@
 
             <br>
         
-            <button class="SIGN" type="submit">Sign in</button>
+            <button type="submit">Sign in</button>
         </form>
         
 

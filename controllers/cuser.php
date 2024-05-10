@@ -29,8 +29,8 @@
         if($password==$password2){
 
             //Insertamos el usuario en la BBDD
-            $sql = "INSERT INTO user (username, pass,mail)
-                    VALUES ('$username', '$password', '$mail')";
+            $sql = "INSERT INTO user (username, pass,mail,profile_pic)
+                    VALUES ('$username', '$password', '$mail','../img/pp/dt_pp.png')";
             $result=$conn -> query($sql);
 
             //Recogemos el id del usuario creado para mandarlo a la main page
