@@ -1,5 +1,6 @@
    <?php
     include '../config/bdconfig.php';
+    session_start();
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $database);
@@ -12,13 +13,12 @@
     // Comprobar si se ha enviado el formulario
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $route = '../img/';
         // Recibir datos del formulario
         $title = $_POST["title"];
         $body = $_POST["body"];
-        $file = $route .$_POST["file"];
+        $file = $_POST["file"];
         $subjectid = $_POST["subject"];
-        $userid = 2;
+        $userid = $_SESSION['id'];
         $date = date('Y-n-d');
 
         $sql = "SELECT subject_id FROM subject WHERE name = '$subjectid'";

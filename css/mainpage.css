@@ -14,16 +14,32 @@ body{
     width: 8%;
     float: left;
     display: block;
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px 20px;
 }
 
 .buscador{
-    float: right;
-    margin: 3vw;
+    float: left;
+    margin-top: 35px;
+    margin-left: 100px;
     width: 35%;
     border-radius: 60px;
     padding: 13px;
+}
+
+.userpfp{
+    margin-top: 15px;
+}
+
+.bar_pfp{
+    border-radius: 800px;
+}
+
+.bar_username{/*CSS QUE CAMBIA USERNAME EN LA BARRA TOPNAV*/
+    display: block;
+    float: right;
+    font-size: 25px;
+    color: rgb(190, 199, 226);
 }
 
 /*------------POSTS---------------*/
@@ -44,16 +60,16 @@ body{
 
 .upost{ /*Estructura General de Post y Comment*/
     background-color: #4e4c5e;
-    margin-left: 12%;
     display: inline-block;
     width: 75%;
-    border-radius: 80px
+    border-radius: 80px;
+    margin: 30px 0 10px 12%;
 }
 
 .pp{ /*CSS QUE EDITA LA PFP DE POST*/
     float: left;
     margin-top: 40px;
-    margin-left: 10px;
+    margin-left: 5%;
     width: 50px;
     height: 50px;
     padding: 5px;
@@ -66,25 +82,27 @@ body{
     margin-top: 60px;
     font-size: 40px;
     font-size: 25px;
-    color: rgb(190, 199, 226);
     margin-bottom: 5px;
 }
 
 .post_title{ /*CSS QUE EDITA TITULO DE POST*/
     font-size: 25px;
-    margin-left: 30px;
+    margin-left: 7%;
     color: rgb(190, 199, 226);
     margin-bottom: 5px;
+    width: 550px;
 }
 
 .post_subject{ /*CSS QUE EDITA EL SUBJECT DE POST*/
     color: rgb(190, 199, 226);
+    margin-left: 7%;
 }
 
 .post_body{/*CSS QUE EDITA BODY DE POST*/
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(194, 220, 223);
     display: block;
+    margin-left: 7%;
 } 
 
 .p_img{ /*CSS QUE EDITA IMG DE POST*/
@@ -105,6 +123,10 @@ body{
 /*------------COMMENTS---------------*/
 
 .username{ /*CSS QUE EDITA USERNAME DE COMMENT*/
+    font-size: 30px;
+    color: rgb(190, 199, 226);
+
+    float: right;
 
 }
 .comment_pp{ /*CSS QUE EDITA PFP DE COMMENT*/
@@ -116,38 +138,59 @@ body{
     border-radius: 200px;
 
 }
-
 .c_body{ /*CSS QUE EDITA BODY DE COMMENT*/
-    
+    display: block;
+    font-size: 20px;
 }
 
-
-.profile_pic{/*CSS QUE CAMBIA LA PFP EN LA BARRA TOPNAV*/
-
+/*BOTON PARA CREAR POST*/
+.boton{
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 2%;
+    background-color: #4e4c5e;
+    right: 30px;
+    position: fixed;
+    cursor: pointer;
 }
-.bar_username{/*CSS QUE CAMBIA USERNAME EN LA BARRA TOPNAV*/
-
+.boton a{
+    color: rgb(190, 199, 226);
+    text-decoration: none;
+    list-style: none;
 }
 
-@media only screen and (max-width:20000000px) {
-    .topnav a{
+@media only screen and (max-width: 850px){
+    .c_body {
         display: none;
     }
-    .topnav a.icon{
-        display: block;
+    .comment_pp{
+        display: none;
+    }
+    .username{
+        display: none;
+    }
 
+    .post{
+        width: 71%;
     }
-}
-/*MEDIA QUERIE PARA TRABAJAR*/
-@media only screen and (max-width:20000000px){
-    .topnav.responsive{
-        position: relative;
-    }
-    .topnav.responsive .icon{
-        position: absolute;
-    }
-    .topnav.responsive a{
-        display: block;
+
+    .nombre{
+        height: 170px
     }
     
+    .nombre h1{
+        margin-top: 55px;
+        font-size: 30px;
+    }
+    
+    .nombre p{
+        font-size: 20px;
+    }
+    
+    .nombre img{
+        width: 100px;
+        padding: 10px;
+    }
 }

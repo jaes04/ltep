@@ -1,7 +1,6 @@
 <?php
     include '../config/bdconfig.php';
-
-    SESSION_START();
+    session_start();
 
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $database);
@@ -16,6 +15,6 @@
         $username = $row['username'];
         $profile_pic = $row['profile_pic'];
 
-        echo '<img class = profile_pic src = "' . $profile_pic . '" alt = "user_pic">';
-        echo '<p class = "bar_username">'.$username.'</p>';
+        echo '<img src = '. $profile_pic .' alt = "' . $profile_pic . '" class = "bar_pfp"/>';
+        echo '<a href="http://localhost/proyectoIntermodular/page/userpage.php"> <p class = "bar_username">'.$username.'</p> </a>';
     }

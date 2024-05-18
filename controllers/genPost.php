@@ -1,7 +1,5 @@
 <?php
     include("..\config\bdconfig.php");
-    session_start();
-
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -80,7 +78,6 @@
             $qsub = $conn->query($sql);
             $row = $qsub->fetch_assoc();
             $subject = $row['name'];
-            echo' <p>'.$post_id.'</p>';
 
             echo '<article>';
             echo '  <table class = "upost">';
@@ -130,7 +127,7 @@
                 }else{
                     echo '      <tr>';
                     echo '          <td>';
-                    echo '              <a href = '. $post_file.'>';
+                    echo '              <a href = '. $post_file.' target="_blank">';
                     echo '                  <img src = "../img/post/p_folder.png" alt = "pdf"  class = "p_pdf">';
                     echo '              </a>';
                     echo '          </td>';
@@ -143,7 +140,3 @@
         }
 
     }
-
-
-
-
