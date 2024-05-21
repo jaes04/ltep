@@ -1,0 +1,51 @@
+.innerbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40vw;
+    height: 40vw;
+    background-color:#4e4c5e;
+
+    margin-left: 30%;
+
+    border-radius: 10vh;
+    justify-content: center;
+    
+
+}
+
+.innerbox label{
+    color: beige;
+    
+    font-size: 200%;
+
+   margin-left:30%;
+}
+.innerbox input{
+    margin-left: 35%;
+    width: 30%;
+    height: 30%;
+}
+
+
+button{
+    float: right;
+    margin-right: 30%;
+    background-color: #2a2e34;
+    margin-top:5%;
+    padding: 5%;
+    border-radius: 3rem;
+    color: beige;
+    font-size: 2.1vw;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+/*---------------------*/
+
+body{
+    background-color: #2b2a34;
+   
+}

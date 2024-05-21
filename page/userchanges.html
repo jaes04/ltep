@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\userchanges.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="innerbox">
+        <form action="..\controllers\userchanges.php"  method="POST">
+            <label for="n_username" >Nuevo nombre</label>
+            <input type="text" id="n_username" name="n_username" maxlength="50">
+            <br>
+            <label for="pfp" >Nueva imagen</label>
+            <input type="file" id="pfp" name="pfp">
+            <br>
+            <button type="submit">Cambiar</button>
+
+        </form>
+    </div>
+    
+</body>
+</html>

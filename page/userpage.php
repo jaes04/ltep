@@ -16,8 +16,9 @@
     
     <div class="nombre">
         <img src="../img/userPic.PNG">
-            <h1>Juan Botijo</h1>
-            <p>@juanbotijogirocompleto</p>
+        <h1>Juan Botijo</h1>
+        <p>@juanbotijogirocompleto</p>
+        <a href="..\page\userchanges.html">Modificar</a>
     </div>
     <div class="feed">
         <?php include '../controllers/ugenPost.php';?>

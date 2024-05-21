@@ -16,5 +16,5 @@
         $profile_pic = $row['profile_pic'];
 
         echo '<img src = '. $profile_pic .' alt = "' . $profile_pic . '" class = "bar_pfp"/>';
-        echo '<a href="http://localhost/proyectoIntermodular/page/userpage.php"> <p class = "bar_username">'.$username.'</p> </a>';
+        echo '<a href="../page/userpage.php"> <p class = "bar_username">'.$username.'</p> </a>';
     }

@@ -41,7 +41,7 @@
                     <br>
                     <a src = "#" >¿Has olvido la contraseña?</a>
                     <br>
-                    <button type="submit">Iniciar Seseion</button>
+                    <button type="submit">Iniciar Sesion</button>
                     <br>
                     <div class="maybe">
                         <p>¿No tienes cuenta?</p> <br>
