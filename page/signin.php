@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="..\css\signinstyle.css">
-    <title>Document</title>
+    <title>Sign in</title>
 </head>
 <body>
+    <div class="logoBox">
+        <a href="../index.html"><img class="logo" src="../img/logo.png"/></a>
+    </div>
     
-    
-    <a class="logo"><img src="..\img\logo.png"></a>
             
-    
-    
-
     <div class="innerbox">
-        
         <form action="../controllers/cuser.php" method="post">
-            <H2 class="titleSignUp" >Sign in</H2>
+            <h2 class="titleSignUp">Sign in</h2>
 
-            <Label for="username">Username</Label>
-            <br>
+            <label for="username">Username</label>
             <input type="text" id="username" name="username">
             <?php
                 if(isset($_GET["usr"])){
@@ -29,17 +25,11 @@
                     }
                 }
             ?>
-                
-            <br>
-                
-            <label for="mail">Correo electronico:</label>
-            <br>
-            <input type="email" id="mail" name="mail">
 
-            <br>
+            <label for="mail">Correo electronico:</label>
+            <input type="email" id="mail" name="mail">
                 
-            <label for="">Contraseña:</label>
-            <br>
+            <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password">
             <?php
                 if(isset($_GET["pwd"])){
@@ -48,21 +38,13 @@
                     }
                 }
             ?>
-                
-            <br>
+
         
-            <label for="">Repetir Contraseña:</label>
-            <br>
+            <label for="password2">Repetir Contraseña:</label>
             <input type="password" id="password2" name="password2">
-
-            <br>
             <p>Al registrarte, aceptas nuestras Condiciones. Obtén información sobre cómo recopilamos, usamos y compartimos tus datos en la Política de privacidad, así como el uso que hacemos de las cookies y tecnologías similares en la Política de cookies.</p>
-            <button type="submit">Sign in</button>
+            <button type="submit">Registrarse</button>            
         </form>
-
-       
-        
-
     </div>
 </body>
 </html>

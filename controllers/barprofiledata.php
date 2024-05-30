@@ -1,7 +1,6 @@
 <?php
     include '../config/bdconfig.php';
-    session_start();
-
+    
     // Crear conexión
     $conn = new mysqli($servername, $username, $password, $database);
 
@@ -16,5 +15,5 @@
         $profile_pic = $row['profile_pic'];
 
         echo '<img src = '. $profile_pic .' class = "bar_pfp"/>';
-        echo '<a href="../page/userpage.php" class = "bar_username"> <p>'.$username.'</p></a>';
+        echo '<a href="../page/userpage.php"> <p class = "bar_username">'.$username.'</p> </a>';
     }

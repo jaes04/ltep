@@ -1,132 +1,105 @@
-body{
-    background-color: #2b2a34;
-   
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.logobox{
-    background-color:black;
+body{
+    background-color: #2b2a34;
+}
+
+.logoBox{
+    float: left;
+    margin-left: 10%;
+}
+.logo{
+    width: 35vw;
+    padding-top: 12vw;
 }
 
 .innerbox{
-    width: 80vh;
-    height: 80vh;
+    float: left;
+    margin: 20px 0 0 5%;
+    width: 35%;
     background-color:#4e4c5e;
-
-    border-radius: 10vh;
-
-    margin-left: 120vh; 
-
-    justify-content: center;
-    
-
+    border-radius: 80px;
 }
+
+.titleSignUp{
+    text-align: center;
+    color: rgb(220, 245, 245);;
+    font-size: 5vw;
+}
+
 .innerbox p{
     text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    font-size: 0.8vw;
+    margin: 2% 30% 0 30%;
+    font-size: 15px;
 }
 
 .innerbox h2{
+    font-size: 5vw;
     margin-bottom: 5%;
 }
 
 /*forms*/
 .innerbox label{
-    color: beige;
-    
-    font-size: 200%;
-
-   margin-left:35%;
+    color: rgb(220, 245, 245);
+    font-size: 1.7vw;
+    margin-left: 30%;
 }
+
 .innerbox input{
-    margin-left: 35%;
-    width: 30%;
-    height: 30%;
+    margin: 0 0 10px 30%;
+    width: 40%;
+    padding: 3px;
 }
 
 .signingbox button:hover{
-    
     background-color: #ddd;
     color: black;
     border-radius: 5vh;
-    
 }
 
 button{
-    float: right;
-    margin-right: 35%;
-    background-color: #2a2e34;
-    margin-top:0%;
-    padding: 5%;
-    border-radius: 3rem;
-    color: beige;
-    font-size: 2.1vw;
-    text-transform: uppercase;
+    background-color: #141318;
+    width: 50%;
+    margin: 5% 0 3% 25%;
+    padding: 5% 0 6% 0;
+    border-radius: 80px;
+    color: rgb(220, 245, 245);;
+    font-size: 2vw;
     cursor: pointer;
-
+    border: none;
 }
 
-/*--forms--*/
-
-.logo img{
-    position: absolute;
-    background-size: cover;
-
-    padding-left: 8%;
-    padding-top: 8%;
-
-    width: 40%;
-
-    text-align: center;
-    
-   
-}
-
-
-
-.titleSignUp{
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: aliceblue;
-
-    font-size: 7vw;
-
-   
-    
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .innerbox {
-        width: 90%;
-        height: 80vh;
-        margin-left: 5%; /* Adjust margin as needed */
+        width: 80%;
+        margin: 5% 0 0 10%;
     }
 
-    .signingbox {
-        width: 90%;
-        margin-left: 5%; /* Adjust margin as needed */
-        margin-bottom: 5%;
-    }
-
-    .logo img{
+    .logoBox{
         display: none;
     }
 
     .innerbox label{
-        font-size: 200%;
+        font-size: 3vw;
     }
-    .innerbox H2{
-        font-size: 300%;
+
+    .innerbox h2{
+        font-size: 6vw;
+        margin-top: 20px;
     }
 
     button{
         width: 50%;
         margin-right: 25%;
+        font-size: 3vw;
+        padding: 40px;
     }
 
     .innerbox p{
-        font-size: 1.9vh;
+        font-size: 15px;
         margin-left: 3%;
         margin-right: 3%;
     }

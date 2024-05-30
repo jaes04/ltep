@@ -11,68 +11,69 @@ COLOR MÁS OSCURO #141318
 body{
     background-color: #2b2a34;
 }
-.logo{
-    display: block;
+.left{
     float: left;
-    margin-top: 2.5%;
-    margin-left: 10%;
- 
+    margin: 6% 0 0 12%;
     width: 35%;
-    height: 80%;
     background-color: #4e4c5e;
-    border-radius: 15px;
+    border-radius: 25px;
 }
-.logo img{
-    margin-top: 8%;
-    margin-left: 30px;
+.logo{
+    margin: 6% 0 0 9%;
     width: 80%;
-    margin-bottom: 5%;
-    padding-bottom: 55px;
+    padding-bottom: 75px;
 }
-.logo h1{
-    margin-top: 5%;
-    margin-left: 30%;
+.ltitle{
+    margin: 5% 0 0 30%;
     font-size: 5vw;
     color: rgb(220, 245, 245);
 }
-.chose{
+
+/*-------------------------------------*/
+
+.right{
     display: block;
     float: left;
-    margin-top: 2.5%;
-    margin-left: 5%;
+    margin: 6% 0 0 5%;
     width: 35%;
-    height: 80%;
     background-color: #4e4c5e;
-    border-radius: 15px;
+    border-radius: 25px;
+    padding-bottom: 55px;
 }
-.chose h2{
-    margin-top: 5%;
-    margin-left: 30%;
-    font-size: 5vw;
-    color: rgb(220, 245, 245);;
+
+.rtitlenew{
+    margin: 5% 0 0 25%;
+    font-size: 3vw;
+    color: rgb(220, 245, 245);
 }
-.chose button{
+.rtitleuser{
+    margin: 5% 0 0 9%;
+    font-size: 3vw;
+    color: rgb(220, 245, 245);
+}
+
+.right button{
     border-radius: 80px;
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-bottom: 5%;
-    width: 60%;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    margin: 5% 0 3% 25%;
+    width: 50%;
+    padding: 5% 0 6% 0;
     font-size: 2vw;
     background-color:#141318;
     color: rgb(220, 245, 245);
+    border: none;
+    cursor: pointer;
+    
 }
-.chose button:hover{
+.right button:hover{
     background-color: #1f1f26;
     transition: 0.5s;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 786px) {
-    .logo{
+    .left{
         margin-top: 20%;
     }
-    .chose{
+    .right{
         margin-top: 20%;
     }
     
@@ -80,34 +81,42 @@ body{
 
 
 @media only screen and (max-width: 768px) {
-    .logo{
-        margin-top: 10%;
+    .left{
+        margin: 10% 0 0 10%;
         width: 80%;
+        height: 28vw;
     }
-    .logo h1{
+    .ltitle{
         display: block;
         float: left;
         font-size: 10vw;
-        margin-top: 12%;
-        margin-left: 20%;
+        margin: 10% 0 0 15%;
     }
-    .logo img{
+    .logo{
         display: block;
         float: left;
-        width: 30%;
+        margin-top: 5%;
+        width: 35%;
     } 
-    .chose{
+
+
+    .right{
         width: 80%;
-        margin-top: 10%;
-        margin-left: 10%;
+        margin: 5% 0 0 10%;
+        padding-bottom: 5%;
     }   
-    .chose h2{
+
+    .rtitlenew{
         display: none;
     }
-    .chose button{
+
+    .rtitleuser{
+        display: none;
+    }
+
+    .right button{
         margin-top: 5%;
-        margin-bottom: 5%;
-        margin-left: 20%;
+        margin-left: 25%;
         font-size: 4vw;
     }
 }

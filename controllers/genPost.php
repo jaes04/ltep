@@ -83,7 +83,7 @@
             echo '  <table class = "upost">';
             echo '      <tr>';
             echo '          <td>';
-            echo '              <img src = '. $post_profile_pic .' alt = "' . $username . '"  class = "pp"/>';
+            echo '              <img src = '. $post_profile_pic .'class = "pp"/>';
             echo '              <p class = "p_username">'. $username . '</p>';
             echo '          </td>';
             echo '          <td rowspan = 3>';
@@ -98,7 +98,7 @@
                 $username = $row['username'];
                 $profile_pic = $row['profile_pic'];
                 echo'       <article>';
-                echo'           <img src = '. $profile_pic . 'class = "comment_pp"/>';
+                echo'           <img src = '. $profile_pic .'class = "comment_pp"/>';
                 echo'           <p class = "username">'.$username.'</p>';
                 echo'           <p class = "c_body">'.$body.'</p>';
                 echo'       </article>';
@@ -121,14 +121,14 @@
                 if(str_contains($post_file,".png")){
                     echo '      <tr>';
                     echo '          <td>';
-                    echo '              <img src = '. $post_file.' alt = "' . $post_file . '"  class = "p_img">';
+                    echo '              <img src = '. $post_file.' class = "p_img">';
                     echo '          </td>';
                     echo '      </tr>';
                 }else{
                     echo '      <tr>';
                     echo '          <td>';
                     echo '              <a href = '. $post_file.' target="_blank">';
-                    echo '                  <img src = "../img/post/p_folder.png" alt = "pdf"  class = "p_pdf">';
+                    echo '                  <img src = "../img/post/p_folder.png" class = "p_pdf">';
                     echo '              </a>';
                     echo '          </td>';
                     echo '      </tr>';

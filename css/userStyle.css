@@ -12,23 +12,34 @@ body{
     background-color: #221f2c;
 }
 
-.topnav img{
-    width: 8%;
+.logoDiv{
     float: left;
-    display: block;
+
+}
+
+.logo{
+    width: 200px;
     margin-top: 10px;
     padding: 10px 20px;
 }
-.topnav a{
-    width: 8%;
+
+.userData{
+    float: right;
 }
 
-.buscador{
+.bar_pfp{
+    width: 80px;
+    border-radius: 800px;
+    margin: 40px 20px 0px 0px;
+
+}
+
+.bar_username{/*CSS QUE CAMBIA USERNAME EN LA BARRA TOPNAV*/
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(190, 199, 226);
     float: right;
-    margin: 3vw;
-    width: 35%;
-    border-radius: 60px;
-    padding: 13px;
+    margin: 65px 80px 0px 0px;
 }
 
 /*EL DIV CON EL NOMBRE Y EL TAG, FOTO USUARIO*/

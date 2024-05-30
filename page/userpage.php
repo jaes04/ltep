@@ -10,8 +10,8 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="http://localhost/proyectoIntermodular/page/main.php"><img src="../img/logo.png"></a>
-        <input class = "buscador" type="text" placeholder="Buscate algo pues...">
+        <a href="http://localhost/proyectoIntermodular/page/main.php"><img src="../img/logo.png" class="logo"></a>
+        <div class="userData"><?php include '../controllers/profiledata.php'?></div>
     </div>
     
     <div class="nombre">
@@ -20,6 +20,7 @@
         <p>@juanbotijogirocompleto</p>
         <a href="..\page\userchanges.html">Modificar</a>
     </div>
+
     <div class="feed">
         <?php include '../controllers/ugenPost.php';?>
     </div>

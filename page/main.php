@@ -7,13 +7,14 @@
     <title>Unote</title>
 </head>
 <body>
+
     <div class="topnav" id="myTopnav">
-    <a href="#"><img src=../img/logo.png></a>
-        <input class = "buscador" type="text" placeholder="Buscate algo pues..."/> 
-        <div class="userpfp"><?php include '../controllers/profiledata.php'?></div>
+        <div class="logoDiv"><a href="#"><img src="../img/logo.png" class="logo"></a></div>
+        <div class="userData"><?php include '../controllers/profiledata.php'?></div>
     </div>
+
     <div class="feed">
-        <button class="boton" type="submit"><a href="../page/createpost.php">New Post</a></button>
+        <button class="boton" type="submit"><a href="../page/createpost.php">+</a></button>
         <?php include '../controllers/genPost.php';?>
     </div>
 </body>
